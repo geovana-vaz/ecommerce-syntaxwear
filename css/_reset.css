@@ -1,1 +1,78 @@
-/* _reset.css (LIMPO) - reset removido. */
+/*
+	_reset.css
+	Reset moderno inspirado por Andy Bell (piccalil)
+	Fonte: https://piccalil.li/blog/a-modern-css-reset/
+
+	Adaptado para este projeto. Mantém consistência entre navegadores,
+	remove estilos padrão intrusivos e prepara uma base para trabalhar.
+*/
+
+/* 1. Box sizing */
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+/* 2. Remove margins that browsers set for elements */
+html, body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd {
+	margin: 0;
+}
+
+/* 3. Set core body defaults */
+html, body {
+	height: 100%;
+}
+
+body {
+	line-height: 1.5; /* improve readability */
+	-webkit-font-smoothing: antialiased; /* better font rendering */
+}
+
+/* 4. Make images easier to work with */
+img, picture {
+	max-width: 100%;
+	display: block;
+}
+
+/* 5. Inherit fonts for inputs and buttons */
+input, button, textarea, select {
+	font: inherit;
+}
+
+/* 6. Remove built-in form element spacing in iOS */
+button, [type="button"], [type="reset"], [type="submit"] {
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+/* 7. Avoid text overflows */
+textarea {
+	resize: vertical;
+}
+
+/* 8. Reduce motion for people who prefer it */
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation-duration: 0.001ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.001ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+/* 9. Remove list styles on ul, ol elements that have a role attribute */
+ol, ul {
+	list-style: none;
+	padding: 0;
+}
+
+/* 10. Make headings inherit font-weight when appropriate */
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 600;
+}
+
+/* 11. Links: allow default color inheritance */
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
